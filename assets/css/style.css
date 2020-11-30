@@ -1,0 +1,32 @@
+/* table of content */
+
+/*
+1. Section Settings
+2. Section Carousel
+
+*/
+
+
+/* Section Settings */
+
+html,
+body {
+    height: 100%;
+    padding-top: 35px;
+}
+
+
+
+.bg-alpha{
+    background: rgb(0, 0, 0, 0.8);
+}
+
+/* section carousel */
+.carousel
+.carousel-inner
+.carousel-item
+.carousel-item .active{
+    height: 100%;
+}
+
+
