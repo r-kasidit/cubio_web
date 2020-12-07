@@ -1,8 +1,10 @@
 /* table of content */
 
 /*
-1. Section Settings
+1. Section Settings & nav bar
 2. Section Carousel
+3. Section blog
+4. section footer
 
 */
 
@@ -15,18 +17,96 @@ body {
     padding-top: 35px;
 }
 
-
-
 .bg-alpha{
     background: rgb(0, 0, 0, 0.8);
 }
+.bg-drop{
+    background-color: rgba(126, 123, 123, 0.8);
+    color: #ffffff;
+}
+.border-short-bottom {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
 
-/* section carousel */
-.carousel
-.carousel-inner
-.carousel-item
-.carousel-item .active{
-    height: 100%;
+.border-short-bottom::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -60px;
+    background: #ffffff;
 }
 
 
+/* section carousel */
+/* .carousel
+.carousel-inner
+.carousel-item
+.carousel-item .active{
+    height: 450px;
+    width: 100%;
+} */
+
+/* @media (min-width: 576px) {
+    .carousel-item img {
+        width: auto !important;
+        height: 400px;
+        max-height: 400px;
+    }
+} */
+
+/* Section Blog */
+
+.warpper-card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.warpper-card-img::after {
+    content: '';
+    padding-top: 56.25%;
+    display: block;
+    height: 0;
+}
+
+.warpper-card-img img {
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.warpper-card-img img:hover {
+    transform: scale(1.2)
+}
+
+/* section footer */
+.semi-footer{
+    background-color: #2b2b2b;
+    color: #ffffff;    
+}
+
+.semi-footer a{
+    color: #ffffff;
+}
+
+/* .semi-footer h4{
+    border-bottom: 2px solid;
+    padding: 10px 0;
+} */
+
+.footer{
+    background-color: #2b2b2b;
+    color: #ffffff;
+    font-size: 0.7rem;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+
+footer a{
+    color: #ffffff;
+}
