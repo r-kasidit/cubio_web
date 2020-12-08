@@ -5,9 +5,9 @@
     <title>cu web</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
         <nav class="navbar navbar-light bg-transparent">
             <a class="navbar-brand" href="#">
-                <img src="../assets/img/favicon.png" width="50" height="50" class="d-inline-block align-center" alt=""
+                <img src="assets/img/favicon.png" width="50" height="50" class="d-inline-block align-center" alt=""
                     loading="lazy">
                 Official CU BIO website
             </a>
@@ -64,18 +64,34 @@
     </nav>
 
     <!-- section header -->
-    <header data-jarallax='{"speed";0.6}' class="jarallax" style="background-image: url('../assets/img/historytemplate.png'); padding: 350px;">
+    <header data-jarallax='{"speed";0.6}' class="page-title jarallax" style="background-image: url('assets/img/historytemplate.png');">
         <div class="container">
-            <div class="row" class="col-12">
-                <h1 class="display-4 font-weight-bold text-light text-center">
-                    ประวัติภาควิชาชีววิทยา
-                </h1>
-                <p>เรียบเรียง รองศาสต</p>
-
+            <div class="row" >
+                <div class="col-12 text-center">
+                    <h1 class="display-4 font-weight-bold ">
+                        ประวัติภาควิชาชีววิทยา
+                    </h1>
+                    <p class="lead">เรียบเรียง รองศาสตราจารย์ ดร. กำธร ธีรคุปต์</p>
+                </div>
             </div>
         </div>
        
     </header>
+
+    <!-- section timeline -->
+    <section class="container py-5">
+        <h1 class="display-4">Timeline</h1>
+        <div class="row">
+            <div class="col-12">
+                <ul class="timeline">
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
 
    
 
@@ -86,7 +102,7 @@
         <div class="row">
             <div class="col-md-4">
                 <a class="navbar-brand border-short-bottom"" href=" #">
-                    <img src="../assets/img/favicon.png" width="50" height="50" class="d-inline-block align-center" alt=""
+                    <img src="assets/img/favicon.png" width="50" height="50" class="d-inline-block align-center" alt=""
                         loading="lazy">
                     Official CU BIO website
                 </a>
@@ -138,10 +154,10 @@
         </span>
     </footer>
 
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/jarallax/dist/jarallax.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
 </body>
 
 </html>

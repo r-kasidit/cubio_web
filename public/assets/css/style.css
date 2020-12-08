@@ -5,7 +5,8 @@
 2. Section Carousel
 3. Section blog
 4. section footer
-
+5. section page-title
+6. section timeline
 */
 
 
@@ -110,3 +111,16 @@ body {
 footer a{
     color: #ffffff;
 }
+/* section page-title */
+.page-title{
+    position: relative;
+    display: block;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    color: #ffffff;
+}
+
+/* section timeline */
+
+
+
