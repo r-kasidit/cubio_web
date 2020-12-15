@@ -112,39 +112,29 @@ footer a{
     color: #ffffff;
 }
 /* section page-title */
-.page-title{
-    position: relative;
-    display: block;
-    padding-top: 250px;
-    padding-bottom: 100px;
-    color: #ffffff;
-}
-
-/* section timeline */
-.timeline{
+.timeline {
     list-style: none;
     position: relative;
     padding: 20px 0;
-    
 }
 
-.timeline >li{
+.timeline>li {
     position: relative;
     margin-bottom: 40px;
 }
 
-.timeline::before{
+.timeline::before {
+    position: absolute;
     content: " ";
     width: 2px;
-    background: #2b2b2b;
-    position: absolute;
+    background: #e6e6e6;
     top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -1px;
 }
 
-li>.timeline-badge{
+li>.timeline-badge {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -152,24 +142,26 @@ li>.timeline-badge{
     left: 50%;
     margin-left: -9px;
     border-radius: 50%;
-    background: #ffffff;
-    box-shadow: 0 0 0 5px #ffffff;
+    background: #fff;
+    box-shadow: 0 0 0 5px #fff;
     top: 15px;
 }
 
-li>.timeline-badge::before{
+li>.timeline-badge::before {
+    content: "";
     position: absolute;
-    content: " ";
     top: 5px;
     right: 20px;
     width: 25px;
     height: 2px;
-    background: #2b2b2b;
+    background: #e6e6e6;
 }
 
+li.inverted>.timeline-badge::before {
+    right: -32px;
+}
 
-
-li>.timeline-badge p{
+li>.timeline-badge p {
     width: 200px;
     margin-top: -9px;
     margin-left: 25px;
@@ -177,14 +169,23 @@ li>.timeline-badge p{
     font-weight: bold;
 }
 
-
+li.inverted>.timeline-badge p {
+    float: right;
+    text-align: right;
+    margin-right: 25px;
+}
 
 li>.timeline-card {
     position: relative;
     width: 46%;
     float: left;
-    text-align: left;
+    text-align: right;
     padding: 0 10px;
+}
+
+li.inverted>.timeline-card {
+    float: right;
+    text-align: left;
 }
 
 .timeline>li::after {
@@ -193,7 +194,38 @@ li>.timeline-card {
     display: block;
 }
 
+.timeline-arrow {
+    width: 100%;
+    text-align: center;
+    bottom: -70px;
+    color: #e6e6e6;
+}
 
-
-
+@media (max-width: 768px) {
+    .timeline::before,
+    .timeline-badge {
+        left: 40px !important;
+    }
+    .timeline-badge::before {
+        right: -32px !important;
+    }
+    .timeline-badge p,
+    li.inverted>.timeline-badge p {
+        margin-left: 50px !important;
+        text-align: left;
+        float: left;
+    }
+    li>.timeline-card {
+        width: 100%;
+        text-align: left;
+        padding: 37px 0 0 85px;
+    }
+    .timeline-arrow {
+        text-align: left;
+        left: 0;
+    }
+    .timeline-arrow {
+        padding-left: 32px;
+    }
+}
 
