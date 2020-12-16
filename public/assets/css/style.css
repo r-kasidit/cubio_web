@@ -7,6 +7,7 @@
 4. section footer
 5. section page-title
 6. section timeline
+7. section stars
 */
 
 
@@ -112,6 +113,18 @@ footer a{
     color: #ffffff;
 }
 /* section page-title */
+.page-title{
+    position: relative;
+    display: block;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+
+
+/* Section Timeline */
+
 .timeline {
     list-style: none;
     position: relative;
@@ -138,7 +151,7 @@ li>.timeline-badge {
     position: absolute;
     width: 18px;
     height: 18px;
-    border: 3px solid #84ba3f;
+    border: 3px solid #2b2b2b;
     left: 50%;
     margin-left: -9px;
     border-radius: 50%;
