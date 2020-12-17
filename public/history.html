@@ -33,7 +33,7 @@
                 </li>
 
                 <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         The department
                     </a>
@@ -80,70 +80,83 @@
 
     <!-- section timeline -->
     <section class="container py-5">
-        <h1 class="display-4 text-center">Timeline</h1>
-        <div class="row">
-            <div class="col-12">
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge">
-                            <p class="text-info">26 มีนาคม พ.ศ. 2450</p>
+        <h1 class="display-4">Timeline</h1>
+        <div class="col-12">
+            <!-- Page header -->
+            <!-- /Page header -->
+            <!-- Timeline -->
+            <div class="timeline">
+                <div class="line text-muted"></div>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <div class=" icon" style="font-size: 12px; color: #0039A6; padding: 7px ;"> 
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1"
+                                    aria-expanded="true" aria-controls="collapse1">
+                                    พ.ศ. 2450
+                                </a>
+                            </h4>
+        
                         </div>
-                        <div class="timeline-card">
-                            <h5>โปรดเกล้าฯ ให้ประดิษฐาน โรงเรียนข้าราชการพลเรือน</h5>
-                            <p class="text-muted"> ใส่ collapse </p>
+                        <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                <div class="photoholder">
+                                    <img src="http://placehold.it/200x300" />
+                                </div>
+                                <p>
+                                26 มีนาคม พ.ศ. 2450 พระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว ทรงพระกรุณาโปรดเกล้าฯ ให้ประดิษฐาน
+                                โรงเรียนข้าราชการพลเรือนของพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัวฯ (โรงเรียนข้าราชการพลเรือนฯ ได้รับการสถาปนาเมื่อวันที่
+                                1 มกราคม 2453 โดยพระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว ทรงพระกรุณาโปรดเกล้าฯ ให้รวม โรงเรียนมหาดเล็ก โรงเรียนแพทยาลัย
+                                โรงเรียนยันตรศึกษา และโรงเรียนฝึกหัดอาจารย์เข้าด้วยกัน) ขึ้นเป็น จุฬาลงกรณ์มหาวิทยาลัย
+                                ในระยะต้นมหาวิทยาลัยได้จัดการศึกษาเป็น 4 คณะคือ คณะแพทย์ศาสตร์ตั้งอยู่ที่ศิริราชพยาบาล คณะรัฏฐประศาสนศาสตร์
+                                คณะวิศวกรรมศาสตร์ และคณะอักษรศาสตร์และวิทยาศาสตร์ สามคณะฯ หลังตั้งอยู่ที่หอวัง ปทุมวัน (ปัจจุบันคือบริเวณสนามศุภชลาศัย)
+                                </p>
+                                <p>
+                                การเรียนการสอนในระยะก่อตั้งของทั้ง 4 คณะฯ ยังไม่มีหลักสูตรระดับปริญญาบัณฑิต ในคณะอักษรศาสตร์และวิทยาศาสตร์ซึ่งขณะนั้น
+                                หม่อมเจ้าพูนศรีเกษม เกษมศรี เป็นคณะบดี การเรียนการสอนส่วนใหญ่จะเป็นการสอนวิชาพื้นฐานให้กับนิสิตของคณะฯ อื่น คือ
+                                คณะรัฏฐประศาสนศาสตร์ คณะแพทยศาสตร์และคณะวิศวกรรมศาสตร์ ยังไม่ได้เป็นการเรียนการสอนในระดับอุดมศึกษาที่สมบูรณ์
+                                และได้อาศัยกำลังครูผู้สอนส่วนใหญ่ที่มาจากโรงเรียนข้าราชการพลเรือนฯ
+                                </p>
+                            </div>
                         </div>
-                    </li>
-                    <li class="inverted">
-                        <div class="timeline-badge">
-                            <p class="text-info">6 เมษายน พ.ศ. 2460</p>
+                    </div>
+                    <!-- /Panel -->
+                    <!-- Panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <div class=" icon" style="font-size: 12px; color: #0039A6; padding: 6px ;">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    พ.ศ. 2460
+                                </a>
+                            </h4>
+        
                         </div>
-                        <div class="timeline-card">
-                            <h5>โปรดเกล้าฯ ให้ตั้งกรมมหาวิทยาลัยขึ้นในกระทรวงธรรมการ</h5>
-                            <p class="text-muted">ใส่ collapse</p>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <div class="photoholder">
+                                    <img src="http://placehold.it/200x300/f00" />
+                                </div>
+                                <p>
+                                    6 เมษายน พ.ศ. 2460 พระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว ทรงพระกรุณาโปรดเกล้าฯ ให้ตั้งกรมมหาวิทยาลัยขึ้นในกระทรวงธรรมการ
+                                    และทรงพระกรุณาโปรดเกล้าฯ ให้สมเด็จ พระเจ้าบรมวงศ์เธอกรมพระยาชัยนาทนเรนทร
+                                    (ครั้งดำรงพระยศเป็นพระเจ้าน้องยาเธอกรมหมื่นชัยนาทนเรนทร) เป็น อธิบดีกรมมหาวิทยาลัย
+                                    และให้จุฬาลงกรณ์มหาวิทยาลัยอยู่ในความดูแลของกรมนี้
+                                </p>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge">
-                            <p class="text-info">พ.ศ. 2461</p>
-                        </div>
-                        <div class="timeline-card">
-                            <h5>เริ่มเปิดสอนหลักสูตรประกาศนียบัตรวิทยาศาสตร์</h5>
-                            <p class="text-muted">ใส่ collapse</p>
-                        </div>
-                    </li>
-                    <li class="inverted">
-                        <div class="timeline-badge">
-                            <p class="text-info">พ.ศ. 2462</p>
-                        </div>
-                        <div class="timeline-card">
-                            <h5>มีห้องปฏิบัติการกายวิภาคศาสตร์</h5>
-                            <p class="text-muted">ใส่ collapse</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge">
-                            <p class="text-info">6 กันยายน พ.ศ. 2463</p>
-                        </div>
-                        <div class="timeline-card">
-                            <h5>ทุนส่งบุคลากรไปเพื่อศึกษาวิชาแพทย์ เคมี ฟิสิกส์ และชีววิทยา ยังต่างประเทศ</h5>
-                            <p class="text-muted">ใส่ collapse</p>
-                        </div>
-                    </li>
-                    <li class="inverted">
-                        <div class="timeline-badge">
-                            <p class="text-info">พ.ศ. 2464</p>
-                        </div>
-                        <div class="timeline-card">
-                            <h5>เริ่มต้นเจรจากับมูลนิธิร๊อคกี้เฟลเลอร์</h5>
-                            <p class="text-muted">ใส่ collapse</p>
-                        </div>
-                    </li>
-                    <!-- <li class="timeline-arrow">
-                        <i class="fa fa-chevron-down"></i>
-                    </li> -->
-                </ul>
+                    </div>
+                </div>
+                <!-- /Panel -->
             </div>
         </div>
+
 
     </section>
 
@@ -152,7 +165,7 @@
 
 
     <!-- section footer -->
-    <footer class="semi-footer p-5 text-md-left">
+    <footer class="semi-footer p-5 text-md-left" style="clear: both;">
         <div class="row">
             <div class="col-md-4">
                 <a class="navbar-brand border-short-bottom"" href=" #">
