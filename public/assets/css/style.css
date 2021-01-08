@@ -2,7 +2,7 @@
 /* #2B2B2B - #7C6A0A - 868784 - ffffff - ffbf46 */
 /*
 1. Section Settings & nav bar
-2. Section Carousel
+2. Section Carousel & jumbotron
 3. Section blog
 4. section footer
 5. section page-title
@@ -60,6 +60,8 @@ body {
         max-height: 400px;
     }
 } */
+
+
 
 /* Section Blog */
 
